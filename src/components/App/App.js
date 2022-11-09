@@ -16,10 +16,11 @@ function handleChange(event) {
   return (
     <div className="App">
       <h1>Rica & Iona amazing font Checker</h1>
-      <Input onChange={handleChange}> </Input>
-      <Item />
-      <Item />
-      <Item />
+      <Input duck={handleChange}> </Input>
+      <Item text={text} font="monospace" />
+      <Item text={text} font="quicksand"/>
+      <Item text={text} font="lato" />
+      <Item text={text} font="bebas neue"/>
     </div>
   );
 }

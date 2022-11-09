@@ -1,7 +1,9 @@
 import react from 'react';
 
-function Item() {
-return <li></li>
+//const fonts = "monospace"
+function Item(props) {
+    console.log(props)
+return <li style={{fontFamily: props.font}}> {props.text} </li>
 }
 
 export default Item;
