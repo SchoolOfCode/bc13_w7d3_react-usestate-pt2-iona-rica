@@ -1,7 +1,7 @@
 import react from 'react';
 
 function Input(props){
-<input type="text" onChange={()=>""}></input>
-}
-
-export default Input;
+  return <input type="text" onChange={props.onChange}></input>
+  }
+  
+  export default Input;
