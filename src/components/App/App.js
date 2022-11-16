@@ -5,24 +5,23 @@ import Item from "../Item";
 import { useState } from "react";
 
 function App() {
+  const [text, setText] = useState("");
 
-const [text, setText] = useState("")
-
-function handleChange(event) {
-   setText(event.target.value)
-   console.log(text) 
-}
+  function handleChange(event) {
+    setText(event.target.value);
+    console.log(text);
+  }
 
   return (
     <div className="App">
       <h1>Rica & Iona amazing font Checker</h1>
-      <Input onChange={handleChange}> </Input>
-      <Item />
-      <Item />
-      <Item />
+      <Input duck={handleChange}> </Input>
+      <Item userText={text} font="monospace" />
+      <Item userText={text} font="quicksand" />
+      <Item userText={text} font="monospace" />
+      <Item userText={text} font="bebas neue" />
     </div>
   );
 }
 
 export default App;
-
